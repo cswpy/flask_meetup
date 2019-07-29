@@ -3,7 +3,7 @@ The flask application package.
 """
 from flask import Flask, render_template
 import redis
-from flask_session import Session
+#from flask_session import Session
 #from datetime import datetime
 #from main import Selector
 
