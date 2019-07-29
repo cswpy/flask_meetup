@@ -6,7 +6,7 @@ import json
 
 r = redis.StrictRedis(host='127.0.0.1', port=6379)
 
-with open('./dianping_database_edited.csv', 'rt', encoding='utf-8') as csvfile:
+with open('./dianping_database_edited.csv', 'rt') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
         id = row['OBJECTID']
