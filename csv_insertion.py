@@ -4,7 +4,7 @@ import csv
 import redis
 import json
 
-r = redis.StrictRedis(host='127.0.0.1', port=6379)
+r = redis.StrictRedis(host='127.0.0.1', port=6379, password=meetup)
 
 with open('./dianping_database_edited.csv', 'rt') as csvfile:
     reader = csv.DictReader(csvfile)
